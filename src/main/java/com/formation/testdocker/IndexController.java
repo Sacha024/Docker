@@ -1,6 +1,5 @@
 package com.formation.testdocker;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -16,8 +15,6 @@ public class IndexController {
     }
 
 
-    @Value("${title}")
-    private String title;
 
     @GetMapping("/")
         public Iterable<ProductEntity> index() {
